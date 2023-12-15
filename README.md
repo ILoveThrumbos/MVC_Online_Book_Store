@@ -58,13 +58,14 @@ Before getting started, ensure you have the following installed:
 
 7. Modify the AdmitBookStoreDAO.java 'con = DriverManager.getConnection("jdbc:derby://localhost:1527/Books_DB",
                                          "username", "password");' parameters to match your database connection.
-   *EXAMPLE STEP 5*
+   
+   *EXAMPLE STEP 6*
 
    ![image](https://github.com/ILoveThrumbos/MVC_Online_Book_Store/assets/139453924/5439f331-420e-4134-b8d3-d34ba8309257)
 
    
-8. Right-click on the project in NetBeans and choose "Build."
-9. Open your web browser and navigate to http://localhost:8080/java-bookstore.
+9. Right-click on the project in NetBeans and choose "Build."
+10. Open your web browser and navigate to http://localhost:8080/java-bookstore.
    Explore the bookstore, search for books, and make purchases.
 
 ### Known Issues
