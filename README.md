@@ -17,7 +17,8 @@ The Java Bookstore implements a robust MVC structure:
 ## Diagram 
 
 <!--Insert Diagram or GIF here (if applicable) to provide a visual representation of the MVC architecture and the flow of data in the Java Bookstore. !-->
-![image](https://github.com/ILoveThrumbos/JSP_Online_Book_Shop/assets/139453924/34d0398b-933a-4f25-82ff-be0a8bba9955)
+![image](https://github.com/ILoveThrumbos/MVC_Online_Book_Store/assets/139453924/b116693e-b38e-48de-bcf0-c011bf9c29fb)
+
 
 
 ## Installation and Usage Instructions
@@ -43,17 +44,21 @@ Before getting started, ensure you have the following installed:
 3. In NetBeans, go to the "Services" tab.
    Right-click on "Servers" and choose "Add Server."
    Select "GlassFish Server" and provide the path to your installed GlassFish Server 4.1.1.
-4. Open the src/main/resources/application.properties file.
-   Update the database configuration based on your MySQL setup in the service windows explorer.
-5. Right-click on the project in NetBeans and choose "Build."
+4. Open the database configuration based on your Java DB (or MYSQL) properties and setup in the service windows explorer.
    Deploy the project to the GlassFish Server.
-6. Open your web browser and navigate to http://localhost:8080/java-bookstore.
+   *EXAMPLE OF STEP 4*
+   ![image](https://github.com/ILoveThrumbos/MVC_Online_Book_Store/assets/139453924/a6ef33f7-10c5-499e-a434-ecc69916113e)
+
+6. Modify the AdmitBookStoreDAO.java 'con = DriverManager.getConnection("jdbc:derby://localhost:1527/Books_DB",
+                                         "username", "password");' parameters to match your database connection.
+7. Right-click on the project in NetBeans and choose "Build."
+8. Open your web browser and navigate to http://localhost:8080/java-bookstore.
    Explore the bookstore, search for books, and make purchases.
 
 ### Known Issues
    - No checkout system created to validate credentails and credit card.
-   - Does not contain any error messages/handling.
-   - 
+   - Does not contain any error messages/handling with incorrect input
+   - No database to store user credentials. Standalone store with products.
 
 ## Support and Contributions
 If you encounter any issues or have suggestions for improvement, please create an issue on the GitHub repository. Contributions are welcome, so feel free to submit pull requests to enhance the functionality or fix bugs.
