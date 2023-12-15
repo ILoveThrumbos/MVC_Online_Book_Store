@@ -46,6 +46,7 @@ Before getting started, ensure you have the following installed:
    Select "GlassFish Server" and provide the path to your installed GlassFish Server 4.1.1.
 4. Open the database configuration based on your Java DB (or MYSQL) properties and setup in the service windows explorer.
    Deploy the project to the GlassFish Server.
+   
    *EXAMPLE OF STEP 4*
    
    ![image](https://github.com/ILoveThrumbos/MVC_Online_Book_Store/assets/139453924/a6ef33f7-10c5-499e-a434-ecc69916113e)
